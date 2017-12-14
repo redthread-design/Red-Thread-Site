@@ -1,0 +1,119 @@
+/*
+== Variables =======================
+*/
+
+$red: #BA3310;
+$lgrey: #E6E6E6;
+
+
+$win-box-height: 200px;
+
+/*
+== Variables =======================
+*/
+
+
+/*
+== Top Navigaion ===================
+*/
+
+nav   {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-bottom: 2px dashed $red;
+  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+a.nav-link   {
+  /*color: $red !important;*/
+  padding-left: 1.5em !important;
+  padding-right: 1.5em !important;
+
+}
+
+.nav-icon   {
+  max-height: 30px;
+}
+
+.nav-logo   {
+  max-height: 30px;
+}
+
+/*
+== Top Navigation ====================
+*/
+
+
+/*
+== Hero Section =====================
+*/
+
+.hero-top   {
+  margin-top: 7em;
+}
+
+.hero-top h1  {
+  color: white;
+  text-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
+
+.hero-bottom h5  {
+  color: white;
+  text-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
+
+body  {
+  background-image: url(assets/img/Walking-heads.jpg);
+  background-size:auto;
+  background-repeat: no-repeat;
+  backgrond-position: center center;
+}
+
+.window-box   {
+  min-height: $win-box-height;
+}
+
+.sign-up-area   {
+  text-align: center;
+  margin: 15px;
+}
+
+.sign-up-area button  {
+  padding: 5px 20% 5px 20%;
+}
+
+/*
+== Hero Section =====================
+*/
+
+
+/*
+== Media Queries ====================
+*/
+
+@media screen and (min-height: 666px) {
+  .window-box   {
+    min-height: $win-box-height + 160;
+  }
+}
+
+@media screen and (min-height: 990px) {
+  .window-box   {
+    min-height: $win-box-height + 400;
+  }
+}
+
+@media screen and (min-height: 1201px) {
+  .window-box   {
+    min-height: $win-box-height + 1200;
+  }
+}
+
+@media screen and (max-width: 556px) {
+  a.navbar-brand.active   {
+    display: none;
+  }
+}
+
+/*
+== Media Queries ====================
+*/

@@ -1,0 +1,14 @@
+.nav-logo {
+    height: 30px;
+    width: auto;
+    margin-left: 15px;
+}
+
+.navbar-toggler-icon {
+    height: 30px;
+    width: auto;
+}
+
+.nav-link {
+    margin-left: 5px;
+}
