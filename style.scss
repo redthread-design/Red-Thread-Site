@@ -1,25 +1,20 @@
 /*
-== Variables =======================
+== Variables ===================================================================
 */
 
 $red: #BA3310;
 $lgrey: #E6E6E6;
+$dgrey: #2D2A28;
 
 
 $win-box-height: 200px;
 
 /*
-== Variables =======================
+== Variables ===================================================================
 */
 html      {
   margin: 0px;
   padding: 0px;
-}
-
-
-section   {
-  margin-top: 90px;
-  margin-bottom: 90px;
 }
 
 footer    {
@@ -28,11 +23,11 @@ footer    {
 }
 
 /*
-== Top Navigaion ===================
+== Top Navigaion ===============================================================
 */
 
 nav   {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 1.0);
   border-bottom: 2px dashed $red;
   box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
@@ -53,34 +48,47 @@ a.nav-link   {
 }
 
 /*
-== Top Navigation ====================
+== Top Navigation ==============================================================
 */
 
 
 /*
-== Hero Section =====================
+== Hero Section ================================================================
 */
 
-.hero-top   {
-  margin-top: 7em;
-}
 
 .hero-top h1  {
   color: white;
-  text-shadow: 0px 0px 5px rgba(0,0,0,0.2);
 }
 
 .hero-bottom h5  {
   color: white;
-  text-shadow: 0px 2px 5px rgba(0,0,0,0.2);
 }
 
-body  {
+#hero-back   {
   background-image: url(assets/img/Walking-heads.jpg);
-  background-size:auto;
-  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
   backgrond-position: center center;
+  background-color: $dgrey;
+  padding-top: 7em;
 }
+
+#web-heading  {
+  background-image: url(assets/img/bible-pen.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  backgrond-position: center center;
+  background-color: $dgrey;
+  padding-top: 7em;
+}
+
+#web-heading   {
+  color: white;
+}
+
 
 .window-box   {
   min-height: $win-box-height;
@@ -95,15 +103,24 @@ body  {
   padding: 5px 20% 5px 20%;
 }
 
+.card   {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 /*
-== Hero Section =====================
+== Hero Section ================================================================
 */
 
 /*
-== Benefits Main Section ============
+== Benefits Main Section =======================================================
 */
 
-.benefits-animation {
+#web-benefits   {
+  margin-top: 20em;
+}
+
+#benefits-animation   {
   display:flex;
   align-content: stretch;
   min-height: 900px;
@@ -119,26 +136,41 @@ body  {
   padding: 15px;
 }
 
-/*
-== Benefits Main Section ============
-*/
+#price-heading    {
+  padding: 15px;
+}
 
 /*
-== Footer ===========================
+== Benefits Main Section =======================================================
+*/
+
+.dedicate-image   {
+  display: block;
+  min-height: 40em;
+}
+
+
+.design-text-main   {
+  display: block;
+  margin-top: 40em;
+}
+
+/*
+== Footer ======================================================================
 */
 
 footer  {
   display: block;
-  background-color: #2D2A28;
-  color: #A5A09B;
+  background-color: $dgrey;
+  color: $lgrey;
 }
 
 /*
-== Footer ===========================
+== Footer ======================================================================
 */
 
 /*
-== Media Queries ====================
+== Media Queries ===============================================================
 */
 
 @media screen and (min-height: 666px) {
@@ -166,5 +198,5 @@ footer  {
 }
 
 /*
-== Media Queries ====================
+== Media Queries ===============================================================
 */
